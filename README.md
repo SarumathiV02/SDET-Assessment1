@@ -3,9 +3,11 @@
 <h3>Scenario Description:</h3>
         You are required to automate a scenario to verify that all users from the city "Sparkout" have more than half of their todo tasks completed.
 <h3>Requirements:</h3>
+
       1. Given: Each user has todo tasks.
       2. And: Each user belongs to the city "Sparkout."
       3. Then: The percentage of completed tasks for each user should be greater than 50%.
+      
 <h3>Note:</h3>
       You can use any programming language to implement the API automation or framework.
       The city "Sparkout" can be identified using the following geographical criteria:
