@@ -25,6 +25,12 @@ test('Users from Sparkout should have more than 50% completed tasks', async ({ r
     const completionPercentage = (completedTodos.length / todos.length) * 100;
 
     // Verify completion percentage
-    console.log(`User ${userName} (ID ${userId}) from Sparkout has ${completionPercentage.toFixed(2)}% completed tasks`);
+    if(completionPercentage>50){
+        console.log(`User ${userName} (ID ${userId}) from Sparkout has ${completionPercentage.toFixed(2)}% completed tasks (passed!)`);
+    }
+    else{
+        console.log('no users found(Failed!')
+    }
+    // console.log(`User ${userName} (ID ${userId}) from Sparkout has ${completionPercentage.toFixed(2)}% completed tasks (passed!)`);
   }
 });
